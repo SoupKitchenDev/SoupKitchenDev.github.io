@@ -21,7 +21,7 @@ html, body {
 
 /**/
 .spacer {
-    height: 50px
+    height: 25px;
 }
 
 /**/
@@ -37,7 +37,7 @@ html, body {
     z-index: 1000;
     width: 95%;
     position: relative;
-    bottom: 75px;
+    bottom: 5px;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
@@ -50,7 +50,7 @@ html, body {
 .headerLink {
     text-decoration: none;
     color: white;
-    font-size: 24pt;
+    font-size: 18pt;
 }
 
 /**/
@@ -58,18 +58,12 @@ html, body {
     .headerLink {
       font-size: 16pt;
     }
-    .headerLinks {
-        bottom: 50px;
-    }
 }
 
 /**/
 @media only screen and (max-width: 600px) {
     .headerLink {
       font-size: 12pt;
-    }
-    .headerLinks {
-        bottom: 20px;
     }
 }
 
@@ -84,12 +78,7 @@ html, body {
     display: flex;
     align-self: center;
     justify-self: center;
-    padding: 10px;
     width: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-family: "Instrument Sans", sans-serif;
     color: white;
     font-size: 32pt;
@@ -117,6 +106,8 @@ html, body {
 /*flex container for all movie listings*/
 .movieFlexbox {
     display: flex;
+    align-content: center;
+    justify-content: center;
     width: 100%;
 }
 
@@ -126,7 +117,76 @@ html, body {
     flex-direction: column;
     margin-left: 20px;
     margin-right: 20px;
-    width: 100%;
+    width: 40vw;
+    background-color: rgba(19, 62, 135, 0.5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px white;
+}
+
+/*individual div to fit 1 row 2 movie column*/
+.movieDiv2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 40vw;
+    background-color: rgba(19, 62, 135, 0.5);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 1px white;
+}
+
+@media only screen and (min-width: 935px) {
+    .movieDiv {
+        flex-direction: row;
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (min-width: 935px) {
+    .movieDiv2 {
+        flex-direction: row-reverse;
+        padding-right: 10px;
+    }
+}
+
+.movieInfo {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.movieDesc {
+    display: none;
+    color: white;
+    text-align: right;
+    font-family: "Instrument Sans", sans-serif;
+    margin-right: 5px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .movieDesc {
+        display: block;
+    }
+}
+
+.movieDesc2 {
+    display: none;
+    color: white;
+    text-align: left;
+    font-family: "Instrument Sans", sans-serif;
+    margin-left: 5px;
+}
+
+@media only screen and (min-width: 1200px) {
+    .movieDesc2 {
+        display: block;
+    }
+}
+
+.vertSpacer {
+    width: 20px;
 }
 
 /*div for image adjustments on posters to align them correctly*/
@@ -154,6 +214,22 @@ html, body {
 
 @media only screen and (max-width: 872px) {
     .movieTitle {
+        font-size: 24pt;
+    }
+}
+
+/*large titles for individual movies*/
+.movieTitle2 {
+    color: white;
+    text-align: center;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    font-size: 32pt;
+    margin: 0;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 872px) {
+    .movieTitle2 {
         font-size: 24pt;
     }
 }
