@@ -21,7 +21,7 @@ html, body {
 
 /**/
 .spacer {
-    height: 50px
+    height: 25px
 }
 
 /**/
@@ -37,7 +37,7 @@ html, body {
     z-index: 1000;
     width: 95%;
     position: relative;
-    bottom: 75px;
+    bottom: 5px;
     backdrop-filter: blur(16px) saturate(180%);
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(17, 25, 40, 0.75);
@@ -50,7 +50,7 @@ html, body {
 .headerLink {
     text-decoration: none;
     color: white;
-    font-size: 24pt;
+    font-size: 18pt;
 }
 
 /**/
@@ -58,18 +58,12 @@ html, body {
     .headerLink {
       font-size: 16pt;
     }
-    .headerLinks {
-        bottom: 50px;
-    }
 }
 
 /**/
 @media only screen and (max-width: 600px) {
     .headerLink {
       font-size: 12pt;
-    }
-    .headerLinks {
-        bottom: 20px;
     }
 }
 
@@ -187,12 +181,7 @@ html, body {
     display: flex;
     align-self: center;
     justify-self: center;
-    padding: 10px;
     width: fit-content;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
     font-family: "Instrument Sans", sans-serif;
     color: white;
     font-size: 32pt;
@@ -255,11 +244,33 @@ html, body {
     width: 100%;
     justify-content: end;
     align-content: center;
+    padding: 15px;
+}
+
+.foodBG {
+    background-color: rgba(19, 62, 135, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content:flex-end;
+    justify-content: flex-end;
+}
+
+.foodBG2 {
+    background-color: rgba(19, 62, 135, 0.5);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content:flex-end;
+    justify-content: flex-end;
+    padding-top: 20px;
 }
 
 .foodPhoto {
     display: flex;
-    width: 100%;
+    align-self: center;
+    justify-self: center;
+    width: 40%;
     height: auto;
 }
 
@@ -292,17 +303,23 @@ html, body {
 .foodRow {
     display: flex;
     flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .foodRow2 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .foodPhoto2 {
     display: flex;
-    width: 30%;
+    width: 15%;
     height: auto;
     align-self: center;
     justify-self: center;
